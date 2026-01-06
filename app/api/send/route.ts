@@ -1,8 +1,7 @@
 import { EmailTemplate } from "@/components/EmailTemplate";
 import { Resend } from "resend";
 
-
-if (!process.env.RESEND_API_KEY) {
+if (!process.env.RESEND_API_KEY || !process.env.RESEND_EMAIL_TO) {
   throw new Error("RESEND_API_KEY is not configured in environment variables");
 }
 
@@ -27,7 +26,7 @@ export async function POST(request: Request) {
 
     const { data, error } = await resend.emails.send({
       from: "Roofing Contact <no-reply@zprroofing.com>",
-      to: ["jamzdeveloper@gmail.com"],
+      to: [process.env.RESEND_EMAIL_TO!],
       subject: `WebSite - Nueva consulta de ${fullName}`,
       react: EmailTemplate({
         fullName,
