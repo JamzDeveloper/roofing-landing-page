@@ -1,5 +1,6 @@
 import { Button } from "@/components/ui/button"
 import { ArrowRight, Phone } from "lucide-react"
+import Link from "next/link"
 
 interface ServiceCTAProps {
   emergency?: boolean
@@ -20,35 +21,43 @@ export function ServiceCTA({ emergency = false }: ServiceCTAProps) {
         <div className="flex flex-wrap justify-center gap-4">
           {emergency ? (
             <>
-              <Button size="lg" className="rounded-full px-8 py-6 text-lg gap-2 bg-red-600 hover:bg-red-700 text-white">
-                <Phone className="w-5 h-5" />
-                Call Emergency Line
-              </Button>
-              <Button
-                size="lg"
-                variant="outline"
-                className="rounded-full px-8 py-6 text-lg border-background/30 text-background hover:bg-background/10 bg-transparent"
-              >
-                File Insurance Claim
-              </Button>
+              <Link href="tel:+18159049777">
+                <Button size="lg" className="rounded-full px-8 py-6 text-lg gap-2 bg-red-600 hover:bg-red-700 text-white">
+                  <Phone className="w-5 h-5" />
+                  Call Emergency Line
+                </Button>
+              </Link>
+              <Link href="/#contact">
+                <Button
+                  size="lg"
+                  variant="outline"
+                  className="rounded-full px-8 py-6 text-lg border-background/30 text-background hover:bg-background/10 bg-transparent"
+                >
+                  File Insurance Claim
+                </Button>
+              </Link>
             </>
           ) : (
             <>
-              <Button
-                size="lg"
-                className="rounded-full px-8 py-6 text-lg gap-2 bg-background text-foreground hover:bg-background/90"
-              >
-                Get Free Quote
-                <ArrowRight className="w-5 h-5" />
-              </Button>
-              <Button
-                size="lg"
-                variant="outline"
-                className="rounded-full px-8 py-6 text-lg border-background/30 text-background hover:bg-background/10 bg-transparent"
-              >
-                <Phone className="w-5 h-5 mr-2" />
-                Call Us Now
-              </Button>
+              <Link href="/#contact">
+                <Button
+                  size="lg"
+                  className="rounded-full px-8 py-6 text-lg gap-2 bg-background text-foreground hover:bg-background/90"
+                >
+                  Get Free Quote
+                  <ArrowRight className="w-5 h-5" />
+                </Button>
+              </Link>
+              <Link href="tel:+18159049777">
+                <Button
+                  size="lg"
+                  variant="outline"
+                  className="rounded-full px-8 py-6 text-lg border-background/30 text-background hover:bg-background/10 bg-transparent"
+                >
+                  <Phone className="w-5 h-5 mr-2" />
+                  Call Us Now
+                </Button>
+              </Link>
             </>
           )}
         </div>

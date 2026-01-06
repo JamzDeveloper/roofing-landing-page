@@ -10,7 +10,12 @@ import Image from "next/image"
 export function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
   const [isScrolled, setIsScrolled] = useState(false)
+  const [mounted, setMounted] = useState(false)
   const { setTheme, resolvedTheme } = useTheme()
+
+  useEffect(() => {
+    setMounted(true)
+  }, [])
 
   useEffect(() => {
     const handleScroll = () => {
@@ -63,7 +68,7 @@ export function Header() {
               className="p-1.5 rounded-full hover:bg-secondary transition-colors"
               aria-label="Toggle theme"
             >
-              {resolvedTheme === "light" ? (
+              {mounted && resolvedTheme === "light" ? (
                 <Moon className="w-4 h-4 text-muted-foreground" />
               ) : (
                 <Sun className="w-4 h-4 text-muted-foreground" />
@@ -82,7 +87,7 @@ export function Header() {
               className="p-1.5 rounded-full hover:bg-secondary transition-colors"
               aria-label="Toggle theme"
             >
-              {resolvedTheme === "light" ? (
+              {mounted && resolvedTheme === "light" ? (
                 <Moon className="w-4 h-4 text-muted-foreground" />
               ) : (
                 <Sun className="w-4 h-4 text-muted-foreground" />

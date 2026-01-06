@@ -3,6 +3,7 @@
 import { useEffect, useState } from "react"
 import { Button } from "@/components/ui/button"
 import { ArrowRight, Play, ShieldCheck } from "lucide-react"
+import Link from "next/link"
 
 const heroImages = [
   "/modern-house-aerial-view-beautiful-new-roof-sunny-.jpg",
@@ -43,7 +44,7 @@ export function Hero() {
       <div className="relative z-10 h-full flex flex-col items-center justify-center text-center px-6">
         <div className="flex items-center gap-2 px-4 py-2 rounded-full bg-white/10 backdrop-blur-md border border-white/20 mb-6 animate-slide-in">
           <ShieldCheck className="w-4 h-4 text-white" />
-          <span className="text-sm font-medium text-white tracking-wide">Insured & Licensed #104018820</span>
+          <span className="text-sm font-medium text-white tracking-wide">Insured & Licensed </span>
         </div>
 
         <h1 className="text-5xl md:text-7xl lg:text-8xl font-[family-name:var(--font-display)] font-semibold text-white tracking-tight max-w-4xl text-balance animate-slide-in">
@@ -56,18 +57,22 @@ export function Hero() {
           Excellence above. Protection below.
         </p>
         <div className="flex flex-col sm:flex-row gap-4 mt-8 animate-slide-in" style={{ animationDelay: "0.2s" }}>
-          <Button size="lg" className="rounded-full px-8 gap-2 bg-white text-black hover:bg-white/90">
-            Get Free Estimate
-            <ArrowRight className="w-4 h-4" />
-          </Button>
-          <Button
-            size="lg"
-            variant="outline"
-            className="rounded-full px-8 gap-2 border-white/30 text-white hover:bg-white/10 bg-transparent"
-          >
-            <Play className="w-4 h-4" />
-            Watch Our Work
-          </Button>
+          <Link href="/#contact">
+            <Button size="lg" className="rounded-full px-8 gap-2 bg-white text-black hover:bg-white/90">
+              Get Free Estimate
+              <ArrowRight className="w-4 h-4" />
+            </Button>
+          </Link>
+          <Link href="#work">
+            <Button
+              size="lg"
+              variant="outline"
+              className="rounded-full px-8 gap-2 border-white/30 text-white hover:bg-white/10 bg-transparent"
+            >
+              <Play className="w-4 h-4" />
+              Watch Our Work
+            </Button>
+          </Link>
         </div>
 
         {/* Scroll indicator */}

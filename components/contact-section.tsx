@@ -14,10 +14,40 @@ export function ContactSection() {
     phone: "",
     message: "",
   })
+  const [isSubmitting, setIsSubmitting] = useState(false)
+  const [submitStatus, setSubmitStatus] = useState<'idle' | 'success' | 'error'>('idle')
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault()
-    console.log("Form submitted:", formData)
+    setIsSubmitting(true)
+    setSubmitStatus('idle')
+
+    try {
+      const response = await fetch('/api/send', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({
+          fullName: formData.name,
+          email: formData.email,
+          phone: formData.phone,
+          project: formData.message,
+        }),
+      })
+
+      if (response.ok) {
+        setSubmitStatus('success')
+        setFormData({ name: "", email: "", phone: "", message: "" })
+      } else {
+        setSubmitStatus('error')
+      }
+    } catch (error) {
+      console.error('Error sending form:', error)
+      setSubmitStatus('error')
+    } finally {
+      setIsSubmitting(false)
+    }
   }
 
   return (
@@ -96,10 +126,31 @@ export function ContactSection() {
                 required
               />
 
-              <Button type="submit" size="lg" className="w-full h-14 rounded-xl gap-2">
-                Request Free Estimate
+              <Button 
+                type="submit" 
+                size="lg" 
+                className="w-full h-14 rounded-xl gap-2"
+                disabled={isSubmitting}
+              >
+                {isSubmitting ? 'Sending...' : 'Request Free Estimate'}
                 <ArrowRight className="w-4 h-4" />
               </Button>
+
+              {submitStatus === 'success' && (
+                <div className="p-4 bg-green-50 border border-green-200 rounded-xl">
+                  <p className="text-green-800 text-sm font-medium">
+                    ¡Gracias! Tu mensaje ha sido enviado exitosamente. Te contactaremos pronto.
+                  </p>
+                </div>
+              )}
+
+              {submitStatus === 'error' && (
+                <div className="p-4 bg-red-50 border border-red-200 rounded-xl">
+                  <p className="text-red-800 text-sm font-medium">
+                    Hubo un error al enviar tu mensaje. Por favor intenta nuevamente.
+                  </p>
+                </div>
+              )}
             </form>
           </div>
         </div>
