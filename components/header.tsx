@@ -34,14 +34,18 @@ export function Header() {
   // Prevenir scroll del body cuando el menú está abierto
   useEffect(() => {
     if (isMenuOpen) {
+      // Método más simple y efectivo
       document.body.style.overflow = 'hidden'
+      document.body.style.height = '100vh'
     } else {
-      document.body.style.overflow = 'unset'
+      document.body.style.overflow = ''
+      document.body.style.height = ''
     }
     
     // Cleanup al desmontar el componente
     return () => {
-      document.body.style.overflow = 'unset'
+      document.body.style.overflow = ''
+      document.body.style.height = ''
     }
   }, [isMenuOpen])
 
@@ -118,12 +122,21 @@ export function Header() {
           <>
             {/* Backdrop */}
             <div 
-              className="fixed inset-0 bg-black/50 backdrop-blur-sm z-[60] md:hidden"
+              className="fixed inset-0 bg-black/60 backdrop-blur-sm z-[60] md:hidden"
               onClick={closeMenu}
+              style={{ 
+                position: 'fixed',
+                top: 0, 
+                left: 0, 
+                right: 0, 
+                bottom: 0,
+                width: '100vw',
+                height: '100vh'
+              }}
             />
             
             {/* Menu Panel */}
-            <div className={`fixed top-0 right-0 h-full w-80 max-w-[85vw] bg-background/95 backdrop-blur-xl border-l border-border z-[70] md:hidden transform transition-all duration-300 ease-out ${
+            <div className={`fixed top-0 right-0 h-screen w-80 max-w-[85vw] bg-background/95 backdrop-blur-xl border-l border-border z-[70] md:hidden transform transition-all duration-300 ease-out ${
               isMenuOpen ? 'translate-x-0' : 'translate-x-full'
             }`}>
               {/* Menu Header */}
