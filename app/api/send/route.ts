@@ -27,11 +27,11 @@ export async function POST(request: Request) {
     const { data, error } = await resend.emails.send({
       from: "Roofing Contact <no-reply@zprroofing.com>",
       to: [process.env.RESEND_EMAIL_TO!],
-      subject: `WebSite - Nueva consulta de ${fullName}`,
+      subject: `Website Contact Form – New Inquiry from ${fullName}`,
       react: EmailTemplate({
         fullName,
         email,
-        phone: phone || "No proporcionado",
+        phone: phone || "Not provided",
         project,
       }),
     });
