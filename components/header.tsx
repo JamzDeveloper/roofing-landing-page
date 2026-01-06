@@ -52,14 +52,18 @@ export function Header() {
   return (
     <header
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
-        isScrolled ? "bg-background/80 backdrop-blur-xl border-b border-border" : "bg-transparent"
+        isScrolled 
+          ? "bg-background/90 backdrop-blur-xl border-b border-border" 
+          : "bg-black/20 backdrop-blur-sm"
       }`}
     >
       <div className="container mx-auto px-6">
         <div className="flex items-center justify-between h-16">
           <Link href="/" className="flex items-center gap-2 hover:opacity-80 transition-opacity">
             <Image src="/zpr-logo.svg" alt="ZPR Roofing" width={100} height={100} className="w-20 h-20" priority />
-            <span className="font-[family-name:var(--font-display)] text-lg font-semibold tracking-tight text-foreground">
+            <span className={`font-[family-name:var(--font-display)] text-lg font-semibold tracking-tight transition-colors ${
+              isScrolled ? "text-foreground" : "text-white"
+            }`}>
               ZPR Roofing
             </span>
           </Link>
@@ -75,16 +79,30 @@ export function Header() {
               <Link
                 key={item.label}
                 href={item.href}
-                className="text-xs text-muted-foreground hover:text-foreground transition-colors"
+                className={`text-sm font-medium transition-colors relative group ${
+                  isScrolled 
+                    ? "text-muted-foreground hover:text-foreground" 
+                    : "text-white/90 hover:text-white"
+                }`}
               >
                 {item.label}
+                <span className={`absolute -bottom-1 left-0 w-0 h-0.5 transition-all duration-300 group-hover:w-full ${
+                  isScrolled ? "bg-foreground" : "bg-white"
+                }`}></span>
               </Link>
             ))}
           </nav>
 
           <div className="hidden md:flex items-center gap-3">
             <Link href="/#contact">
-              <Button size="sm" className="h-8 px-4 text-xs rounded-full">
+              <Button 
+                size="sm" 
+                className={`h-8 px-4 text-xs rounded-full transition-all ${
+                  isScrolled 
+                    ? "bg-primary text-primary-foreground hover:bg-primary/90" 
+                    : "bg-white text-black hover:bg-white/90"
+                }`}
+              >
                 Book Inspection Now
               </Button>
             </Link>
@@ -92,25 +110,25 @@ export function Header() {
 
           <div className="md:hidden flex items-center gap-2">
             <button 
-              className="p-2 rounded-full hover:bg-secondary/50 transition-colors relative" 
+              className="p-2 rounded-full hover:bg-white/10 transition-colors relative" 
               onClick={toggleMenu} 
               aria-label="Toggle menu"
             >
               <div className="w-5 h-5 flex flex-col justify-center items-center">
                 <span 
-                  className={`block h-0.5 w-5 bg-foreground transition-all duration-300 ease-out ${
+                  className={`block h-0.5 w-5 transition-all duration-300 ease-out ${
                     isMenuOpen ? 'rotate-45 translate-y-0.5' : '-translate-y-1'
-                  }`}
+                  } ${isScrolled ? 'bg-foreground' : 'bg-white'}`}
                 />
                 <span 
-                  className={`block h-0.5 w-5 bg-foreground transition-all duration-300 ease-out ${
+                  className={`block h-0.5 w-5 transition-all duration-300 ease-out ${
                     isMenuOpen ? 'opacity-0' : 'opacity-100'
-                  }`}
+                  } ${isScrolled ? 'bg-foreground' : 'bg-white'}`}
                 />
                 <span 
-                  className={`block h-0.5 w-5 bg-foreground transition-all duration-300 ease-out ${
+                  className={`block h-0.5 w-5 transition-all duration-300 ease-out ${
                     isMenuOpen ? '-rotate-45 -translate-y-0.5' : 'translate-y-1'
-                  }`}
+                  } ${isScrolled ? 'bg-foreground' : 'bg-white'}`}
                 />
               </div>
             </button>
