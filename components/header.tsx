@@ -145,7 +145,7 @@ export function Header() {
 
               {/* Menu Content */}
               <div className="flex flex-col h-full">
-                <nav className="flex-1 px-6 py-8">
+                <nav className="flex-1 px-6 py-6">
                   <div className="space-y-1">
                     {[
                       { label: "Services", href: "/#services" },
@@ -165,17 +165,20 @@ export function Header() {
                       </Link>
                     ))}
                   </div>
+                  
+                  {/* CTA Button moved up */}
+                  <div className="mt-8 px-4">
+                    <Link href="/#contact" onClick={closeMenu}>
+                      <Button size="lg" className="w-full rounded-xl h-12 text-base font-medium">
+                        Book Inspection Now
+                      </Button>
+                    </Link>
+                  </div>
                 </nav>
 
-                {/* Menu Footer */}
-                <div className="p-6 border-t border-border space-y-4">
-                  <Link href="/#contact" onClick={closeMenu}>
-                    <Button size="lg" className="w-full rounded-xl h-12 text-base font-medium">
-                      Book Inspection Now
-                    </Button>
-                  </Link>
-                  
-                  <div className="flex items-center justify-center gap-4 pt-2">
+                {/* Menu Footer - simplified */}
+                <div className="p-6 border-t border-border">
+                  <div className="flex items-center justify-center gap-4">
                     <a 
                       href="tel:+18159049777" 
                       className="text-sm text-muted-foreground hover:text-foreground transition-colors"
