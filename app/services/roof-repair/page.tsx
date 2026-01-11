@@ -64,6 +64,7 @@ const testimonials = [
   },
 ]
 
+
 export default function RoofRepairPage() {
   return (
     <main className="min-h-screen bg-background">
@@ -77,7 +78,7 @@ export default function RoofRepairPage() {
       />
       <ServiceIncludes title="What's Included" items={includes} />
       <ServiceProjects title="Recent Repair Projects" projects={projects} />
-      <ServiceTestimonials testimonials={testimonials} />
+      {/* <ServiceTestimonials testimonials={testimonials} /> */}
       <ServiceCTA />
       <Footer />
       <AIChatWidget />

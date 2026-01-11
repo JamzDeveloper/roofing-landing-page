@@ -132,11 +132,11 @@ export default function AboutPage() {
 
           <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
             {[
-              "GAF Master Elite Contractor",
-              "Owens Corning Preferred Contractor",
-              "CertainTeed SELECT ShingleMaster",
-              "Better Business Bureau A+ Rating",
-              "NRCA Member",
+              // "GAF Master Elite Contractor",
+              // "Owens Corning Preferred Contractor",
+              // "CertainTeed SELECT ShingleMaster",
+              // "Better Business Bureau A+ Rating",
+              // "NRCA Member",
               "Illinois Licensed Contractor",
               "Workers Compensation Insured",
               "General Liability Insured",

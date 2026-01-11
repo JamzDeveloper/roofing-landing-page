@@ -17,7 +17,7 @@ export default function Home() {
       <StatsSection />
       <ServicesSection />
       <WorkShowcase />
-      <TestimonialsSection />
+      {/* <TestimonialsSection /> */}
       <FAQSection />
       <ContactSection />
       {/* <AIChatWidget /> */}

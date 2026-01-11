@@ -78,7 +78,7 @@ export default function StormDamagePage() {
       />
       <ServiceIncludes title="Emergency Services" items={includes} />
       <ServiceProjects title="Storm Recovery Projects" projects={projects} />
-      <ServiceTestimonials testimonials={testimonials} />
+      {/* <ServiceTestimonials testimonials={testimonials} /> */}
       <ServiceCTA emergency />
       <Footer />
       <AIChatWidget />
