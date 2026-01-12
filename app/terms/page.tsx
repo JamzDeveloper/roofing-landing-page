@@ -27,7 +27,7 @@ export default function TermsPage() {
 
           <h2>Services</h2>
           <p>
-            ZPR Roofing provides residential and commercial roofing services including but not limited to installations,
+            ZPR Roofing provides residential and  roofing services including but not limited to installations,
             repairs, inspections, and maintenance. All services are subject to availability and provided in accordance
             with Illinois state regulations and local building codes.
           </p>
@@ -56,8 +56,8 @@ export default function TermsPage() {
           <h2>Payment Terms</h2>
           <ul>
             <li>Payment schedules will be outlined in your project contract.</li>
-            <li>Deposits may be required for larger projects.</li>
-            <li>Final payment is due upon project completion and your satisfaction.</li>
+            <li>We require 50% deposit.</li>
+            <li>Final payment is due upon project completion</li>
             <li>We accept cash, checks, credit cards, and offer financing options.</li>
             <li>Late payments may incur additional fees as specified in the contract.</li>
           </ul>

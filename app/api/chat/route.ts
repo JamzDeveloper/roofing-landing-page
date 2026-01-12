@@ -17,7 +17,7 @@ Key information about ZPR Roofing:
 - 10-year warranty on all work
 - Service areas: Rockford, Loves Park, Machesney Park, Belvidere, Roscoe, and surrounding Northern Illinois
 - Hours: Mon-Sat 7AM-7PM, 24/7 emergency service available
-- Phone: (815) 549-3068
+- Phone: (815) 904-9777
 - Free estimates available
 
 Pricing guidelines (approximate, always recommend an in-person estimate):

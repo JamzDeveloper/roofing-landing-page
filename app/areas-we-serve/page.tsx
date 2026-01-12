@@ -26,7 +26,7 @@ export default function AreasWeServePage() {
     {
       city: "Loves Park",
       county: "Winnebago County",
-      description: "Serving residential and commercial properties throughout Loves Park.",
+      description: "Serving residential and properties throughout Loves Park.",
       projects: "350+",
     },
     {
@@ -210,7 +210,7 @@ export default function AreasWeServePage() {
                 </Link>
                 <Button size="lg" variant="outline" className="w-full rounded-full bg-transparent">
                   <Phone className="w-4 h-4 mr-2" />
-                  (815) 549-3068
+                  (815) 904-9777
                 </Button>
               </div>
             </div>

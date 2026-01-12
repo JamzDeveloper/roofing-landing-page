@@ -9,7 +9,7 @@ import type { Metadata } from "next"
 export const metadata: Metadata = {
   title: "About ZPR Roofing | Licensed & Insured Roofing Company in Rockford, IL",
   description:
-    "Learn about ZPR Roofing - Rockford's trusted roofing company since 2010. Licensed, insured, and committed to excellence in every project.",
+    "Learn about ZPR Roofing - Rockford's trusted roofing company since 2020. Licensed, insured, and committed to excellence in every project.",
   openGraph: {
     title: "About ZPR Roofing | Licensed & Insured Roofing Company",
     description: "Family-owned roofing company serving Rockford, IL with quality craftsmanship and honest service.",
@@ -166,7 +166,7 @@ export default function AboutPage() {
             </Link>
             <Button size="lg" variant="outline" className="rounded-full bg-transparent">
               <Phone className="w-4 h-4 mr-2" />
-              (815) 549-3068
+              (815) 904-9777
             </Button>
           </div>
         </div>
