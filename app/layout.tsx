@@ -58,9 +58,9 @@ export const metadata: Metadata = {
   },
 
   icons: {
-    icon: "/zpr-logo.svg",
-    shortcut: "/zpr-logo.svg",
-    apple: "/zpr-logo.svg",
+    icon: "/tab-logo.png",
+    shortcut: "/tab-logo.png",
+    apple: "/tab-logo.png",
   },
 };
 
@@ -78,13 +78,13 @@ export default function RootLayout({
         />
         <link
           rel="icon"
-          href="/zpr-logo.svg"
+          href="/tab-logo.png"
           type="image/svg+xml"
           style={{ width: "100px", height: "100px" }}
         />
         <link
           rel="shortcut icon"
-          href="/zpr-logo.svg"
+          href="/tab-logo.png"
           style={{ width: "100px", height: "100px" }}
         />
       </head>
