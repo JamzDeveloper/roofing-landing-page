@@ -1,12 +1,13 @@
-import { Header } from "@/components/header"
-import { Footer } from "@/components/footer"
-import Link from "next/link"
-import type { Metadata } from "next"
+import { Header } from "@/components/header";
+import { Footer } from "@/components/footer";
+import Link from "next/link";
+import type { Metadata } from "next";
 
 export const metadata: Metadata = {
   title: "Privacy Policy | ZPR Roofing",
-  description: "Privacy Policy for ZPR Roofing. Learn how we collect, use, and protect your personal information.",
-}
+  description:
+    "Privacy Policy for ZPR Roofing. Learn how we collect, use, and protect your personal information.",
+};
 
 export default function PrivacyPage() {
   return (
@@ -20,13 +21,20 @@ export default function PrivacyPage() {
 
           <h2>Introduction</h2>
           <p>
-            ZPR Roofing ("we," "our," or "us") is committed to protecting your privacy. This Privacy Policy explains how
-            we collect, use, disclose, and safeguard your information when you visit our website or use our services.
+            ZPR Roofing ("we," "our," or "us") is committed to protecting your
+            privacy. This Privacy Policy explains how we collect, use, disclose,
+            and safeguard your information when you visit our website or use our
+            services.
           </p>
-
+          <br></br>
+          <br></br>
           <h2>Information We Collect</h2>
+          
           <h3>Personal Information</h3>
-          <p>We may collect personal information that you voluntarily provide to us when you:</p>
+          <p>
+            We may collect personal information that you voluntarily provide to
+            us when you:
+          </p>
           <ul>
             <li>Request a quote or estimate</li>
             <li>Fill out a contact form</li>
@@ -39,8 +47,12 @@ export default function PrivacyPage() {
             <li>Name and contact information (email, phone number, address)</li>
             <li>Property information</li>
             <li>Project details and preferences</li>
-            <li>Payment information (processed securely through third-party providers)</li>
+            <li>
+              Payment information (processed securely through third-party
+              providers)
+            </li>
           </ul>
+          <br></br>
 
           <h3>Automatically Collected Information</h3>
           <p>When you visit our website, we may automatically collect:</p>
@@ -51,7 +63,8 @@ export default function PrivacyPage() {
             <li>Referring website</li>
             <li>Cookies and similar tracking technologies</li>
           </ul>
-
+          <br></br>
+          <br></br>
           <h2>How We Use Your Information</h2>
           <p>We use the information we collect to:</p>
           <ul>
@@ -63,36 +76,48 @@ export default function PrivacyPage() {
             <li>Comply with legal obligations</li>
             <li>Prevent fraud and enhance security</li>
           </ul>
-
+          <br></br>
+          <br></br>
           <h2>Information Sharing and Disclosure</h2>
-          <p>We do not sell your personal information. We may share your information with:</p>
+          <p>
+            We do not sell your personal information. We may share your
+            information with:
+          </p>
           <ul>
             <li>
-              <strong>Service Providers:</strong> Third-party vendors who perform services on our behalf (e.g., payment
-              processing, analytics, email services)
+              <strong>Service Providers:</strong> Third-party vendors who
+              perform services on our behalf (e.g., payment processing,
+              analytics, email services)
             </li>
             <li>
-              <strong>Legal Requirements:</strong> When required by law or to protect our rights and safety
+              <strong>Legal Requirements:</strong> When required by law or to
+              protect our rights and safety
             </li>
             <li>
-              <strong>Business Transfers:</strong> In connection with a merger, sale, or acquisition of our business
+              <strong>Business Transfers:</strong> In connection with a merger,
+              sale, or acquisition of our business
             </li>
           </ul>
-
+          <br></br>
+          <br></br>
           <h2>Cookies and Tracking Technologies</h2>
           <p>
-            We use cookies and similar tracking technologies to enhance your experience on our website. You can control
-            cookie preferences through your browser settings. Note that disabling cookies may affect website
-            functionality.
+            We use cookies and similar tracking technologies to enhance your
+            experience on our website. You can control cookie preferences
+            through your browser settings. Note that disabling cookies may
+            affect website functionality.
           </p>
-
+          <br></br>
+          <br></br>
           <h2>Data Security</h2>
           <p>
-            We implement appropriate technical and organizational measures to protect your personal information.
-            However, no method of transmission over the internet is 100% secure, and we cannot guarantee absolute
-            security.
+            We implement appropriate technical and organizational measures to
+            protect your personal information. However, no method of
+            transmission over the internet is 100% secure, and we cannot
+            guarantee absolute security.
           </p>
-
+          <br></br>
+          <br></br>
           <h2>Your Privacy Rights</h2>
           <p>Depending on your location, you may have the right to:</p>
           <ul>
@@ -100,32 +125,45 @@ export default function PrivacyPage() {
             <li>Request correction of inaccurate information</li>
             <li>Request deletion of your personal information</li>
             <li>Opt-out of marketing communications</li>
-            <li>Withdraw consent where we rely on consent to process your information</li>
+            <li>
+              Withdraw consent where we rely on consent to process your
+              information
+            </li>
           </ul>
-
+          <br></br>
+          <br></br>
           <h2>Children's Privacy</h2>
           <p>
-            Our services are not directed to children under 13 years of age. We do not knowingly collect personal
-            information from children under 13.
+            Our services are not directed to children under 13 years of age. We
+            do not knowingly collect personal information from children under
+            13.
           </p>
-
+          <br></br>
+          <br></br>
           <h2>Third-Party Links</h2>
           <p>
-            Our website may contain links to third-party websites. We are not responsible for the privacy practices of
-            these external sites. We encourage you to review their privacy policies.
+            Our website may contain links to third-party websites. We are not
+            responsible for the privacy practices of these external sites. We
+            encourage you to review their privacy policies.
           </p>
-
+          <br></br>
+          <br></br>
           <h2>Changes to This Privacy Policy</h2>
           <p>
-            We may update this Privacy Policy from time to time. We will notify you of any changes by posting the new
-            Privacy Policy on this page and updating the "Last updated" date.
+            We may update this Privacy Policy from time to time. We will notify
+            you of any changes by posting the new Privacy Policy on this page
+            and updating the "Last updated" date.
           </p>
-
+          <br></br>
+          <br></br>
           <h2>Contact Us</h2>
-          <p>If you have questions or concerns about this Privacy Policy, please contact us:</p>
+          <p>
+            If you have questions or concerns about this Privacy Policy, please
+            contact us:
+          </p>
           <ul>
             <li>
-              <strong>Email:</strong> privacy@zproofing.com
+              <strong>Email:</strong> info@zproofing.com
             </li>
             <li>
               <strong>Phone:</strong> (815) 904-9777
@@ -145,5 +183,5 @@ export default function PrivacyPage() {
 
       <Footer />
     </main>
-  )
+  );
 }

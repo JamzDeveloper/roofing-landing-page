@@ -100,7 +100,7 @@ export default function AreasWeServePage() {
             Professional Roofing Services Across Northern Illinois
           </h1>
           <p className="text-lg text-muted-foreground text-balance mb-8 max-w-2xl mx-auto">
-            ZPR Roofing proudly serves Rockford and over 50 communities throughout Winnebago, Boone, Ogle, and
+            ZPR Roofing proudly serves Northern Illinois and over 50 communities throughout Winnebago, Boone, Ogle, and
             surrounding counties.
           </p>
           <Button size="lg" className="rounded-full">

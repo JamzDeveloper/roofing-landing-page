@@ -1,7 +1,12 @@
-import { Button } from "@/components/ui/button"
-import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion"
-import { ArrowRight } from "lucide-react"
-import Link from "next/link"
+import { Button } from "@/components/ui/button";
+import {
+  Accordion,
+  AccordionContent,
+  AccordionItem,
+  AccordionTrigger,
+} from "@/components/ui/accordion";
+import { ArrowRight } from "lucide-react";
+import Link from "next/link";
 
 export function FAQSection() {
   const faqs = [
@@ -23,7 +28,7 @@ export function FAQSection() {
     {
       question: "What roofing materials do you install?",
       answer:
-        "We install all major roofing systems including asphalt shingles, metal roofing, TPO, EPDM, and flat roofing systems tailored to your needs.",
+        "We install all major roofing systems including asphalt shingles, slate, metal roofing, TPO, EPDM, and flat roofing systems tailored to your needs.",
     },
     {
       question: "Does insurance cover roof replacement?",
@@ -35,7 +40,7 @@ export function FAQSection() {
       answer:
         "We offer comprehensive workmanship warranties (5-10 years) plus manufacturer material warranties (20-50 years depending on product).",
     },
-  ]
+  ];
 
   return (
     <section className="py-20 px-6 bg-secondary/30">
@@ -46,8 +51,8 @@ export function FAQSection() {
               Common Questions About Our Roofing Services
             </h2>
             <p className="text-lg text-muted-foreground mb-8">
-              Get quick answers to frequently asked questions. Need more details? Visit our comprehensive FAQ page or
-              contact us directly.
+              Get quick answers to frequently asked questions. Need more
+              details? Visit our comprehensive FAQ page or contact us directly.
             </p>
             <Link href="/faq">
               <Button variant="outline" className="rounded-full bg-transparent">
@@ -68,7 +73,9 @@ export function FAQSection() {
                   <AccordionTrigger className="text-left hover:no-underline py-5">
                     <span className="font-medium pr-4">{faq.question}</span>
                   </AccordionTrigger>
-                  <AccordionContent className="text-muted-foreground pb-5">{faq.answer}</AccordionContent>
+                  <AccordionContent className="text-muted-foreground pb-5">
+                    {faq.answer}
+                  </AccordionContent>
                 </AccordionItem>
               ))}
             </Accordion>
@@ -76,5 +83,5 @@ export function FAQSection() {
         </div>
       </div>
     </section>
-  )
+  );
 }

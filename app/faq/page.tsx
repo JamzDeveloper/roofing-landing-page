@@ -1,10 +1,15 @@
-import { Header } from "@/components/header"
-import { Footer } from "@/components/footer"
-import { Button } from "@/components/ui/button"
-import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion"
-import { Phone, MessageCircle } from "lucide-react"
-import Link from "next/link"
-import type { Metadata } from "next"
+import { Header } from "@/components/header";
+import { Footer } from "@/components/footer";
+import { Button } from "@/components/ui/button";
+import {
+  Accordion,
+  AccordionContent,
+  AccordionItem,
+  AccordionTrigger,
+} from "@/components/ui/accordion";
+import { Phone, MessageCircle } from "lucide-react";
+import Link from "next/link";
+import type { Metadata } from "next";
 
 export const metadata: Metadata = {
   title: "Roofing FAQ | Common Questions About Roof Installation & Repair",
@@ -12,9 +17,10 @@ export const metadata: Metadata = {
     "Get answers to frequently asked questions about roofing installation, repair costs, materials, warranties, and timelines. Expert advice from ZPR Roofing.",
   openGraph: {
     title: "Roofing FAQ | Your Questions Answered",
-    description: "Common questions about roofing services, costs, materials, and warranties answered by experts.",
+    description:
+      "Common questions about roofing services, costs, materials, and warranties answered by experts.",
   },
-}
+};
 
 export default function FAQPage() {
   const faqCategories = [
@@ -49,7 +55,7 @@ export default function FAQPage() {
         {
           question: "How much does a new roof cost?",
           answer:
-            "Roof costs vary based on size, materials, pitch, and complexity. On average, residential roof replacements range from $8,000 to $25,000. We provide detailed, transparent pricing in every estimate with no hidden fees.",
+            "Roof costs vary based on size, materials, pitch, and complexity. Most residential roof replacements fall within a broad price range, but the final cost depends on your specific home. We provide detailed, transparent pricing in every estimate with no hidden fees. For larger projects, a deposit of at least 50% is required to secure materials and scheduling.",
         },
         {
           question: "Do you offer financing options?",
@@ -82,7 +88,8 @@ export default function FAQPage() {
             "Asphalt shingles last 20-30 years, metal roofing 40-70 years, and TPO/EPDM systems 20-30 years. Actual lifespan depends on installation quality, maintenance, and weather conditions.",
         },
         {
-          question: "What's the difference between 3-tab and architectural shingles?",
+          question:
+            "What's the difference between 3-tab and architectural shingles?",
           answer:
             "Architectural shingles are thicker, more durable, and have a dimensional appearance. They typically last 10-15 years longer than 3-tab shingles and come with better warranties.",
         },
@@ -139,11 +146,11 @@ export default function FAQPage() {
         {
           question: "What voids a roof warranty?",
           answer:
-            "Common warranty voids include improper installation (use licensed contractors!), lack of maintenance, unauthorized modifications, and using incompatible products. Always consult your contractor before making roof changes.",
+            "WARRANTIES, DISCLAIMERS, AND LIMITATIONS OF LIABILITY. Contractor will transfer to Customer all manufacturer’s written warranties Contractor makes no independent warranty as to materials. Contractor provides a limited warranty for workmanship for 10 years after the date of substantial completion and will remedy substantial defects in workmanship without charge to the Customer upon written notice from the Customer within such time period. The foregoing warranty is non-transferrable and is subject to the exclusions contained herein. Contractor shall have no responsibility for damage caused by normal wear and tear, sun, hail, rain, fire, tornado, windstorm, acts by any person other than Contractor or other perils normally contemplated to be covered by property or casualty insurance nor damage resulting from ice dams (freezing and thawing) or excessive snow, rain, ice or winds in excess of 50 mph.  No warranty exists until Contractor is paid in full. CONTRACTOR MAKES NO OTHER WARRANTY OF ANY KIND EITHER EXPRESSED OR IMPLIED, IN CONTRACT OR TORT, INCLUDING SPECIFICALLY NO IMPLIED WARRANTY OF MERCHANTABILITY OR FITNESS FOR A PARTICULAR PURPOSE. CONTRACTOR SHALL HAVE NO OBLIGATION TO ISSUE A WARRANTY OR PERFORM WARRANTY WORK UNLESS AND UNTIL FINAL PAYMENT IN FULL IS RECEIVED BY CONTRACTOR PURSUANT TO THE TERMS OF THIS CONTRACT. \n\n4.⁠ ⁠LIMITATION OF REMEDY. THE CUSTOMER'S SOLE REMEDY AGAINST CONTRACTOR FOR THE WORK PERFORMED UNDER THIS CONTRACT, AND ANY DAMAGES ARISING OUT OF IT, SHALL BE LIMITED TO THE WARRANTY SET FORTH ABOVE. IN NO EVENT SHALL CONTRACTOR BE LIABLE FOR ANY SPECIAL, INCIDENTAL, OR CONSEQUENTIAL DAMAGES OF ANY KIND.",
         },
       ],
     },
-  ]
+  ];
 
   return (
     <main className="min-h-screen">
@@ -156,17 +163,26 @@ export default function FAQPage() {
             Frequently Asked Questions
           </h1>
           <p className="text-lg text-muted-foreground text-balance mb-8 max-w-2xl mx-auto">
-            Get answers to common questions about roofing installation, repairs, costs, and more. Can't find what you're
-            looking for? Contact us directly.
+            Get answers to common questions about roofing installation, repairs,
+            costs, and more. Can't find what you're looking for? Contact us
+            directly.
           </p>
           <div className="flex flex-col sm:flex-row gap-3 justify-center">
             <Link href="/#contact">
-              <Button size="lg" variant="outline" className="rounded-full bg-transparent">
+              <Button
+                size="lg"
+                variant="outline"
+                className="rounded-full bg-transparent"
+              >
                 <MessageCircle className="w-4 h-4 mr-2" />
                 Ask a Question
               </Button>
             </Link>
-            <Button size="lg" variant="outline" className="rounded-full bg-transparent">
+            <Button
+              size="lg"
+              variant="outline"
+              className="rounded-full bg-transparent"
+            >
               <Phone className="w-4 h-4 mr-2" />
               (815) 904-9777
             </Button>
@@ -192,7 +208,9 @@ export default function FAQPage() {
                     <AccordionTrigger className="text-left hover:no-underline py-5">
                       <span className="font-medium pr-4">{item.question}</span>
                     </AccordionTrigger>
-                    <AccordionContent className="text-muted-foreground pb-5">{item.answer}</AccordionContent>
+                    <AccordionContent className="text-muted-foreground pb-5">
+                      {item.answer}
+                    </AccordionContent>
                   </AccordionItem>
                 ))}
               </Accordion>
@@ -208,7 +226,8 @@ export default function FAQPage() {
             Still Have Questions?
           </h2>
           <p className="text-lg text-muted-foreground mb-8">
-            Our roofing experts are here to help. Get in touch for personalized answers and a free estimate.
+            Our roofing experts are here to help. Get in touch for personalized
+            answers and a free estimate.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link href="/#contact">
@@ -216,7 +235,11 @@ export default function FAQPage() {
                 Get Free Estimate
               </Button>
             </Link>
-            <Button size="lg" variant="outline" className="rounded-full bg-transparent">
+            <Button
+              size="lg"
+              variant="outline"
+              className="rounded-full bg-transparent"
+            >
               <Phone className="w-4 h-4 mr-2" />
               Call Now
             </Button>
@@ -226,5 +249,5 @@ export default function FAQPage() {
 
       <Footer />
     </main>
-  )
+  );
 }
