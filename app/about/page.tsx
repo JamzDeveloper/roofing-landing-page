@@ -26,7 +26,7 @@ export default function AboutPage() {
         <div className="container mx-auto max-w-4xl text-center">
           <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-primary/10 text-primary text-xs font-medium mb-6">
             <ShieldCheck className="w-3.5 h-3.5" />
-            Licensed & Insured
+            Licensed & Insured #104018820
           </div>
           <h1 className="font-[family-name:var(--font-display)] text-4xl md:text-6xl font-semibold text-balance mb-6">
             Building Trust, One Roof at a Time

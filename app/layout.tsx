@@ -53,7 +53,12 @@ export const metadata: Metadata = {
       "max-snippet": -1,
     },
   },
-    generator: 'v0.app'
+  
+  icons: {
+    icon: '/zpr-logo.svg',
+    shortcut: '/zpr-logo.svg',
+    apple: '/zpr-logo.svg',
+  },
 }
 
 export default function RootLayout({
@@ -65,6 +70,8 @@ export default function RootLayout({
     <html lang="en" suppressHydrationWarning>
       <head>
         <meta name="google-site-verification" content="NiC6IylfCAzclWxmgAPnSclJry1FegpyeW5TNUck2UQ" />
+        <link rel="icon" href="/zpr-logo.svg" type="image/svg+xml" />
+        <link rel="shortcut icon" href="/zpr-logo.svg" />
       </head>
       <body className={`font-sans antialiased`}>
         <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
