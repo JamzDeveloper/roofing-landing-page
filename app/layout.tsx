@@ -1,13 +1,16 @@
-import type React from "react"
-import type { Metadata } from "next"
-import { Inter, Geist_Mono, Playfair_Display } from "next/font/google"
-import { Analytics } from "@vercel/analytics/next"
-import { ThemeProvider } from "@/components/theme-provider"
-import "./globals.css"
+import type React from "react";
+import type { Metadata } from "next";
+import { Inter, Geist_Mono, Playfair_Display } from "next/font/google";
+import { Analytics } from "@vercel/analytics/next";
+import { ThemeProvider } from "@/components/theme-provider";
+import "./globals.css";
 
-const _inter = Inter({ subsets: ["latin"] })
-const _geistMono = Geist_Mono({ subsets: ["latin"] })
-const _playfair = Playfair_Display({ subsets: ["latin"], weight: ["400", "500", "600", "700"] })
+const _inter = Inter({ subsets: ["latin"] });
+const _geistMono = Geist_Mono({ subsets: ["latin"] });
+const _playfair = Playfair_Display({
+  subsets: ["latin"],
+  weight: ["400", "500", "600", "700"],
+});
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://zproofing.com"),
@@ -53,25 +56,37 @@ export const metadata: Metadata = {
       "max-snippet": -1,
     },
   },
-  
+
   icons: {
-    icon: '/zpr-logo.svg',
-    shortcut: '/zpr-logo.svg',
-    apple: '/zpr-logo.svg',
+    icon: "/zpr-logo.svg",
+    shortcut: "/zpr-logo.svg",
+    apple: "/zpr-logo.svg",
   },
-}
+};
 
 export default function RootLayout({
   children,
 }: Readonly<{
-  children: React.ReactNode
+  children: React.ReactNode;
 }>) {
   return (
     <html lang="en" suppressHydrationWarning>
       <head>
-        <meta name="google-site-verification" content="NiC6IylfCAzclWxmgAPnSclJry1FegpyeW5TNUck2UQ" />
-        <link rel="icon" href="/zpr-logo.svg" type="image/svg+xml" />
-        <link rel="shortcut icon" href="/zpr-logo.svg" />
+        <meta
+          name="google-site-verification"
+          content="NiC6IylfCAzclWxmgAPnSclJry1FegpyeW5TNUck2UQ"
+        />
+        <link
+          rel="icon"
+          href="/zpr-logo.svg"
+          type="image/svg+xml"
+          style={{ width: "100px", height: "100px" }}
+        />
+        <link
+          rel="shortcut icon"
+          href="/zpr-logo.svg"
+          style={{ width: "100px", height: "100px" }}
+        />
       </head>
       <body className={`font-sans antialiased`}>
         <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
@@ -80,5 +95,5 @@ export default function RootLayout({
         <Analytics />
       </body>
     </html>
-  )
+  );
 }
