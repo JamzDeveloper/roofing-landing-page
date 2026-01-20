@@ -26,16 +26,16 @@ export function ServiceHero({
   secondaryCtaLink = "/#work",
 }: ServiceHeroProps) {
   return (
-    <section className="relative h-[70vh] lg:h-[80vh] overflow-hidden pt-24 md:pt-20 lg:pt-0">
+    <section className="relative h-[70vh] lg:h-[80vh] overflow-hidden pt-32 lg:pt-0">
       <img src={image || "/placeholder.svg"} alt={title} className="absolute inset-0 w-full h-full object-cover" />
       <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-black/20" />
 
-      <div className="relative container mx-auto px-6 h-full flex items-end pb-16 lg:pb-24">
+      <div className="relative container mx-auto px-6 h-full flex items-center lg:items-end pb-0 lg:pb-24">
         <div className="max-w-3xl">
           <p className="text-primary text-sm font-medium tracking-wider uppercase mb-3">Our Services</p>
-          <h1 className="text-5xl md:text-6xl lg:text-7xl font-semibold text-white tracking-tight mb-4">{title}</h1>
-          <p className="text-2xl md:text-3xl text-white/90 font-light mb-6">{subtitle}</p>
-          <p className="text-lg text-white/70 leading-relaxed mb-8 max-w-2xl">{description}</p>
+          <h1 className="text-4xl md:text-5xl lg:text-7xl font-semibold text-white tracking-tight mb-4">{title}</h1>
+          <p className="text-xl md:text-2xl lg:text-3xl text-white/90 font-light mb-6">{subtitle}</p>
+          <p className="text-base md:text-lg text-white/70 leading-relaxed mb-8 max-w-2xl">{description}</p>
           <div className="flex flex-wrap gap-4">
             <Link href={ctaLink}>
               <Button
