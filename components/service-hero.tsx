@@ -26,7 +26,7 @@ export function ServiceHero({
   secondaryCtaLink = "/#work",
 }: ServiceHeroProps) {
   return (
-    <section className="relative h-[70vh] lg:h-[80vh] overflow-hidden pt-16 lg:pt-0">
+    <section className="relative h-[70vh] lg:h-[80vh] overflow-hidden pt-24 md:pt-20 lg:pt-0">
       <img src={image || "/placeholder.svg"} alt={title} className="absolute inset-0 w-full h-full object-cover" />
       <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-black/20" />
 
