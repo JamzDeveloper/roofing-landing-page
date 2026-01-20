@@ -74,7 +74,10 @@ export default function StormDamagePage() {
         description="When disaster strikes, we're here. Insurance claim assistance and rapid repairs to restore your peace of mind. Our emergency response team is available around the clock to secure your property, prevent further damage, and begin the restoration process immediately."
         image="/emergency-roof-repair-after-storm-damage-professio.jpg"
         ctaText="Call Emergency Line"
+        ctaLink="tel:+18159049777"
         ctaVariant="destructive"
+        secondaryCtaText="File Insurance Claim"
+        secondaryCtaLink="/#contact"
       />
       <ServiceIncludes title="Emergency Services" items={includes} />
       <ServiceProjects title="Storm Recovery Projects" projects={projects} />
