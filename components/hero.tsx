@@ -6,9 +6,9 @@ import { ArrowRight, Play, ShieldCheck } from "lucide-react"
 import Link from "next/link"
 
 const heroImages = [
+  "/stunning-modern-home-exterior-architecture-with-pr.jpg",
   "/modern-house-aerial-view-beautiful-new-roof-sunny-.jpg",
   "/images/roofing-service.png",
-  "/stunning-modern-home-exterior-architecture-with-pr.jpg",
 ]
 
 export function Hero() {
