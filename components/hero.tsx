@@ -75,6 +75,23 @@ export function Hero() {
           </Link>
         </div>
 
+        {/* Horizontal Banner below buttons */}
+        <div className="mt-8 animate-slide-in" style={{ animationDelay: "0.4s" }}>
+          <a 
+            href="https://app.gethearth.com/partners/zpr-roofing?utm_campaign=58365&utm_content=zero_percent&utm_medium=contractor-website&utm_source=contractor&utm_term=700x110" 
+            target="_blank"
+            rel="noopener noreferrer"
+            className="block hover:opacity-90 transition-opacity"
+          >
+            <img 
+              src="https://app.gethearth.com/contractor_images/zpr-roofing/banner.jpg?size_id=700x110&color=zero_percent" 
+              alt="Financing Options Available" 
+              className="max-w-full h-auto rounded-lg shadow-2xl mx-auto"
+              style={{ maxHeight: '110px', width: 'auto' }}
+            />
+          </a>
+        </div>
+
         {/* Scroll indicator */}
         <div className="absolute bottom-8 left-1/2 -translate-x-1/2 animate-float">
           <div className="w-6 h-10 border-2 border-white/30 rounded-full flex items-start justify-center p-2">

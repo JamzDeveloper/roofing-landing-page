@@ -174,6 +174,23 @@ export function ContactSection() {
             </form>
           </div>
         </div>
+
+        {/* Hearth Financing Banner */}
+        <div className="mt-20 flex justify-center">
+          <a 
+            href="https://app.gethearth.com/partners/zpr-roofing?utm_campaign=58365&utm_content=zero_percent&utm_medium=contractor-website&utm_source=contractor&utm_term=700x110" 
+            target="_blank"
+            rel="noopener noreferrer"
+            className="block hover:opacity-90 transition-opacity"
+          >
+            <img 
+              src="https://app.gethearth.com/contractor_images/zpr-roofing/banner.jpg?size_id=700x110&color=zero_percent" 
+              alt="Financing Options Available" 
+              className="max-w-full h-auto rounded-lg"
+              style={{ maxHeight: '110px', width: 'auto' }}
+            />
+          </a>
+        </div>
       </div>
     </section>
   );
