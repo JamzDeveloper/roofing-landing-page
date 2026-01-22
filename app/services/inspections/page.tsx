@@ -72,7 +72,7 @@ export default function InspectionsPage() {
         title="Roof Inspections"
         subtitle="Know before it's too late."
         description="Comprehensive roof assessments with detailed reports. AI-powered analysis for accurate, instant estimates. Whether you're buying a home, filing an insurance claim, or maintaining your property, our advanced inspection technology provides the insights you need to make informed decisions."
-        image="/professional-roof-inspector-examining-shingles-wit.jpg"
+        image="/images/roofing-service2.png"
         ctaText="Schedule Inspection"
         ctaLink="/#contact"
         secondaryCtaText="View Our Work"

@@ -1,9 +1,9 @@
-"use client"
+"use client";
 
-import { useState, useEffect, useCallback } from "react"
-import { Button } from "@/components/ui/button"
-import { ArrowRight, ChevronLeft, ChevronRight } from "lucide-react"
-import Link from "next/link"
+import { useState, useEffect, useCallback } from "react";
+import { Button } from "@/components/ui/button";
+import { ArrowRight, ChevronLeft, ChevronRight } from "lucide-react";
+import Link from "next/link";
 
 const services = [
   {
@@ -27,7 +27,7 @@ const services = [
     subtitle: "24/7 Emergency response.",
     description:
       "When disaster strikes, we're here. Insurance claim assistance and rapid repairs to restore your peace of mind.",
-    image: "/emergency-roof-repair-after-storm-damage-professio.jpg",
+    image: "/modern-house-aerial-view-beautiful-new-roof-sunny-3.jpg",
     href: "/services/storm-damage",
   },
   {
@@ -35,31 +35,31 @@ const services = [
     subtitle: "Know before it's too late.",
     description:
       "Comprehensive roof assessments with detailed reports. AI-powered analysis for accurate, instant estimates.",
-    image: "/professional-roof-inspector-examining-shingles-wit.jpg",
+    image: "/images/roofing-service2.png",
     href: "/services/inspections",
   },
-]
+];
 
 export function ServicesSection() {
-  const [current, setCurrent] = useState(0)
-  const [isAutoPlaying, setIsAutoPlaying] = useState(true)
+  const [current, setCurrent] = useState(0);
+  const [isAutoPlaying, setIsAutoPlaying] = useState(true);
 
   const next = useCallback(() => {
-    setCurrent((prev) => (prev + 1) % services.length)
-  }, [])
+    setCurrent((prev) => (prev + 1) % services.length);
+  }, []);
 
   const prev = () => {
-    setCurrent((prev) => (prev - 1 + services.length) % services.length)
-    setIsAutoPlaying(false)
-  }
+    setCurrent((prev) => (prev - 1 + services.length) % services.length);
+    setIsAutoPlaying(false);
+  };
 
   useEffect(() => {
-    if (!isAutoPlaying) return
-    const interval = setInterval(next, 6000)
-    return () => clearInterval(interval)
-  }, [isAutoPlaying, next])
+    if (!isAutoPlaying) return;
+    const interval = setInterval(next, 6000);
+    return () => clearInterval(interval);
+  }, [isAutoPlaying, next]);
 
-  const service = services[current]
+  const service = services[current];
 
   return (
     <section id="services" className="relative bg-secondary">
@@ -72,7 +72,11 @@ export function ServicesSection() {
               index === current ? "opacity-100" : "opacity-0"
             }`}
           >
-            <img src={s.image || "/placeholder.svg"} alt={s.title} className="w-full h-full object-cover" />
+            <img
+              src={s.image || "/placeholder.svg"}
+              alt={s.title}
+              className="w-full h-full object-cover"
+            />
             <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent" />
           </div>
         ))}
@@ -81,7 +85,9 @@ export function ServicesSection() {
         <div className="absolute bottom-0 left-0 right-0 p-8 lg:p-16">
           <div className="container mx-auto">
             <div className="max-w-2xl">
-              <p className="text-primary text-sm font-medium tracking-wider uppercase mb-2">Our Services</p>
+              <p className="text-primary text-sm font-medium tracking-wider uppercase mb-2">
+                Our Services
+              </p>
               <h2
                 key={current}
                 className="text-4xl md:text-5xl lg:text-6xl font-semibold text-white tracking-tight animate-slide-in"
@@ -127,8 +133,8 @@ export function ServicesSection() {
               <button
                 key={index}
                 onClick={() => {
-                  setCurrent(index)
-                  setIsAutoPlaying(false)
+                  setCurrent(index);
+                  setIsAutoPlaying(false);
                 }}
                 className={`h-1 rounded-full transition-all ${index === current ? "w-8 bg-white" : "w-4 bg-white/30"}`}
                 aria-label={`Go to service ${index + 1}`}
@@ -137,8 +143,8 @@ export function ServicesSection() {
           </div>
           <button
             onClick={() => {
-              next()
-              setIsAutoPlaying(false)
+              next();
+              setIsAutoPlaying(false);
             }}
             className="w-10 h-10 rounded-full bg-white/10 backdrop-blur-sm flex items-center justify-center hover:bg-white/20 transition-colors"
             aria-label="Next service"
@@ -148,5 +154,5 @@ export function ServicesSection() {
         </div>
       </div>
     </section>
-  )
+  );
 }
