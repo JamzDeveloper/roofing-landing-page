@@ -68,7 +68,6 @@ export default function TermsPage() {
             <li>Total cost and payment terms</li>
             <li>Project timeline and completion date (weather permitting)</li>
             <li>Warranty information</li>
-   
           </ul>
 
           <br></br>
@@ -80,8 +79,10 @@ export default function TermsPage() {
             </li>
             <li>
               A 50% deposit is required on all retail projects to secure
-              scheduling and cover material procurement. The remaining balance
-              is due upon project completion.
+              scheduling and cover material procurement. Deposit requirements
+              vary depending on the type of project. For insurance-covered work,
+              a deposit is required, while retail projects may have different
+              terms.
             </li>
             <li>Final payment is due upon project completion</li>
             <li>

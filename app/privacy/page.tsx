@@ -39,7 +39,6 @@ export default function PrivacyPage() {
             <li>Request a quote or estimate</li>
             <li>Fill out a contact form</li>
             <li>Schedule an appointment</li>
-            <li>Subscribe to our newsletter</li>
             <li>Contact us via phone or email</li>
           </ul>
           <p>This information may include:</p>

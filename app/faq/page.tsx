@@ -70,7 +70,7 @@ export default function FAQPage() {
         {
           question: "What payment methods do you accept?",
           answer:
-            "We accept cash, checks, all major credit cards, and offer financing options. Payment is typically due upon project completion, with deposits required for larger projects.",
+            "We accept cash, checks, all major credit cards, and offer financing options. Payment is due upon project completion, deposits are required for all projects (On Large projects we require 50%)",
         },
       ],
     },
@@ -80,7 +80,7 @@ export default function FAQPage() {
         {
           question: "What roofing materials do you install?",
           answer:
-            "We install all major roofing systems including asphalt shingles, metal roofing, TPO, EPDM, and flat roofing systems. We'll help you choose the best material for your home, budget, and aesthetic preferences.",
+            "We install all major roofing systems including asphalt shingles, metal roofing, Slate, TPO, EPDM, and flat roofing systems. We'll help you choose the best material for your home, budget, and aesthetic preferences.",
         },
         {
           question: "How long do different roofing materials last?",

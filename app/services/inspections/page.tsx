@@ -12,18 +12,18 @@ const includes = [
   {
     icon: Camera,
     title: "Drone Inspection",
-    description: "High-resolution aerial photography and thermal imaging",
+    description: "High-resolution aerial photography",
   },
   {
     icon: FileText,
     title: "Detailed Report",
     description: "Comprehensive 30+ page report with photos and recommendations",
   },
-  {
-    icon: Smartphone,
-    title: "AI-Powered Analysis",
-    description: "Instant damage detection and cost estimates",
-  },
+  // {
+  //   icon: Smartphone,
+  //   title: "AI-Powered Analysis",
+  //   description: "Instant damage detection and cost estimates",
+  // },
   {
     icon: Clock,
     title: "Same-Day Results",
@@ -80,7 +80,7 @@ export default function InspectionsPage() {
       />
       <ServiceIncludes title="Inspection Features" items={includes} />
       <ServiceProjects title="Recent Inspections" projects={projects} />
-      <ServiceTestimonials testimonials={testimonials} />
+      {/* <ServiceTestimonials testimonials={testimonials} /> */}
       <ServiceCTA />
       <Footer />
       <AIChatWidget />

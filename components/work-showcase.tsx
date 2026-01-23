@@ -3,11 +3,11 @@
 import { useState, useEffect } from "react"
 
 const projects = [
-  { image: "/beautiful-modern-home-with-new-dark-shingle-roof-a.jpg", label: "Modern Residential" },
-  { image: "/luxury-home-with-slate-roof-professional-photograp.jpg", label: "Luxury Estate" },
+  { image: "/beautiful-modern-home-with-new-dark-shingle-roof-a.jpg", label: "Residential" },
+  { image: "/luxury-home-with-slate-roof-professional-photograp.jpg", label: "EPDM Roofing" },
   { image: "/commercial-building-flat-roof-professional-install.jpg", label: "Commercial Project" },
   { image: "/spanish-style-home-with-tile-roof-beautiful-sunset.jpg", label: "Tile Roofing" },
-  { image: "/farmhouse-with-metal-roof-modern-rustic-style.jpg", label: "Metal Roofing" },
+  { image: "/stunning-modern-home-exterior-architecture-with-pr.jpg", label: "Metal Roofing" },
 ]
 
 export function WorkShowcase() {

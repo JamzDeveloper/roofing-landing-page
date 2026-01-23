@@ -80,7 +80,7 @@ export default function NewInstallationPage() {
       />
       <ServiceIncludes title="Complete Installation Package" items={includes} />
       <ServiceProjects title="Recent Installations" projects={projects} />
-      <ServiceTestimonials testimonials={testimonials} />
+      {/* <ServiceTestimonials testimonials={testimonials} /> */}
       <ServiceCTA />
       <Footer />
       <AIChatWidget />
