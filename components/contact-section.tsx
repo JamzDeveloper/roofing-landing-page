@@ -6,6 +6,7 @@ import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { ArrowRight, Phone, MapPin } from "lucide-react";
+import { BBBBadge } from "@/components/bbb-badge";
 
 export function ContactSection() {
   const [formData, setFormData] = useState({
@@ -94,6 +95,11 @@ export function ContactSection() {
                     Rockford, Illinois
                   </p>
                 </div>
+              </div>
+
+              <div className="pt-6 border-t border-border">
+                <p className="text-sm text-muted-foreground mb-3">Trusted & Accredited</p>
+                <BBBBadge size="medium" />
               </div>
             </div>
           </div>

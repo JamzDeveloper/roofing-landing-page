@@ -4,6 +4,7 @@ import { useEffect, useState } from "react"
 import { Button } from "@/components/ui/button"
 import { ArrowRight, Play, ShieldCheck } from "lucide-react"
 import Link from "next/link"
+import { BBBBadge } from "@/components/bbb-badge"
 
 const heroImages = [
   "/stunning-modern-home-exterior-architecture-with-pr.jpg",
@@ -42,9 +43,12 @@ export function Hero() {
 
       {/* Content overlay */}
       <div className="relative z-10 h-full flex flex-col items-center justify-center text-center px-6">
-        <div className="flex items-center gap-2 px-4 py-2 rounded-full bg-white/10 backdrop-blur-md border border-white/20 mb-6 animate-slide-in">
-          <ShieldCheck className="w-4 h-4 text-white" />
-          <span className="text-sm font-medium text-white tracking-wide">Insured & Licensed #104018820</span>
+        <div className="flex flex-col sm:flex-row items-center gap-3 mb-6 animate-slide-in">
+          <div className="flex items-center gap-2 px-4 py-2 rounded-full bg-white/10 backdrop-blur-md border border-white/20">
+            <ShieldCheck className="w-4 h-4 text-white" />
+            <span className="text-sm font-medium text-white tracking-wide">Insured & Licensed #104018820</span>
+          </div>
+          <BBBBadge size="small" className="bg-white rounded-lg px-3 py-2 shadow-lg" />
         </div>
 
         <h1 className="text-5xl md:text-7xl lg:text-8xl font-[family-name:var(--font-display)] font-semibold text-white tracking-tight max-w-4xl text-balance animate-slide-in">

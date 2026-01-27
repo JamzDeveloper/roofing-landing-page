@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { BBBBadge } from "@/components/bbb-badge";
 
 export function Footer() {
   return (
@@ -78,6 +79,9 @@ export function Footer() {
               >
                 info@zproofing.com
               </a>
+              <div className="pt-4">
+                <BBBBadge size="large" />
+              </div>
             </div>
           </div>
         </div>
