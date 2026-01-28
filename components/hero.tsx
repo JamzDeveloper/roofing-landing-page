@@ -48,7 +48,6 @@ export function Hero() {
             <ShieldCheck className="w-4 h-4 text-white" />
             <span className="text-sm font-medium text-white tracking-wide">Insured & Licensed #104018820</span>
           </div>
-          <BBBBadge size="small" className="bg-white rounded-lg px-3 py-2 shadow-lg" />
         </div>
 
         <h1 className="text-5xl md:text-7xl lg:text-8xl font-[family-name:var(--font-display)] font-semibold text-white tracking-tight max-w-4xl text-balance animate-slide-in">
@@ -77,6 +76,10 @@ export function Hero() {
               Watch Our Work
             </Button>
           </Link>
+        </div>
+        
+        <div className="mt-6 animate-slide-in" style={{ animationDelay: "0.3s" }}>
+          <BBBBadge size="small" className="bg-white rounded-lg px-2 py-1 shadow-lg scale-90" />
         </div>
 
         {/* Horizontal Banner below buttons */}

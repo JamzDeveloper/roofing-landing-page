@@ -5,6 +5,7 @@ import Link from "next/link"
 import { Button } from "@/components/ui/button"
 import { X } from "lucide-react"
 import Image from "next/image"
+import { BBBBadge } from "@/components/bbb-badge"
 
 export function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
@@ -94,6 +95,7 @@ export function Header() {
           </nav>
 
           <div className="hidden md:flex items-center gap-3">
+            {/* <BBBBadge size="small" className="bg-white rounded-lg px-2 py-1 shadow-lg" /> */}
             <Link href="/#contact">
               <Button 
                 size="sm" 
@@ -198,12 +200,15 @@ export function Header() {
                   </div>
                   
                   {/* CTA Button moved up */}
-                  <div className="mt-8 px-4">
+                  <div className="mt-8 px-4 space-y-4">
                     <Link href="/#contact" onClick={closeMenu}>
                       <Button size="lg" className="w-full rounded-xl h-12 text-base font-medium">
                         Book Inspection Now
                       </Button>
                     </Link>
+                    {/* <div className="flex justify-center mt-10">
+                      <BBBBadge size="small" className="bg-white rounded-lg px-3 py-2 shadow-lg" />
+                    </div> */}
                   </div>
                 </nav>
 
