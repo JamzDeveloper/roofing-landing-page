@@ -78,7 +78,7 @@ export function Hero() {
           </Link>
         </div>
         
-        <div className="mt-6 animate-slide-in" style={{ animationDelay: "0.3s" }}>
+        <div className="mt-6 animate-slide-in hidden md:flex" style={{ animationDelay: "0.3s" }}>
           <BBBBadge size="small" className="bg-white rounded-lg px-2 py-1 shadow-lg scale-90" />
         </div>
 

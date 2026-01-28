@@ -67,6 +67,14 @@ export function Header() {
             }`}>
               ZPR Roofing
             </span>
+            {/* BBB Logo - only visible on mobile */}
+            <Image 
+              src="/Better_Business_Bureau.svg" 
+              alt="BBB Accredited" 
+              width={60} 
+              height={60} 
+              className="w-12 h-12 md:hidden ml-2" 
+            />
           </Link>
 
           <nav className="hidden md:flex items-center gap-8">
