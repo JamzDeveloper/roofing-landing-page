@@ -101,7 +101,7 @@ export default function AboutPage() {
                 src="/Alma photo ZPR.jpg"
                 alt="ZPR Roofing team working on a project"
                 fill
-                className="object-cover"
+                className="object-contain"
               />
             </div>
           </div>
