@@ -98,7 +98,7 @@ export default function AboutPage() {
             </div>
             <div className="relative h-[400px] rounded-2xl overflow-hidden">
               <Image
-                src="/modern-house-with-beautiful-new-roof-aerial-view-s.jpg"
+                src="/Alma photo ZPR.jpg"
                 alt="ZPR Roofing team working on a project"
                 fill
                 className="object-cover"
