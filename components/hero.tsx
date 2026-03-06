@@ -60,7 +60,7 @@ export function Hero() {
           Excellence above. Protection below.
         </p>
         <div className="flex flex-col sm:flex-row gap-4 mt-8 animate-slide-in" style={{ animationDelay: "0.2s" }}>
-          <Link href="/#contact">
+          <Link href="/contact">
             <Button size="lg" className="rounded-full px-8 gap-2 bg-white text-black hover:bg-white/90">
               Get Free Estimate
               <ArrowRight className="w-4 h-4" />

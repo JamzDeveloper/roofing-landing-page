@@ -168,7 +168,7 @@ export default function FAQPage() {
             directly.
           </p>
           <div className="flex flex-col sm:flex-row gap-3 justify-center">
-            <Link href="/#contact">
+            <Link href="/contact">
               <Button
                 size="lg"
                 variant="outline"
@@ -230,7 +230,7 @@ export default function FAQPage() {
             answers and a free estimate.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Link href="/#contact">
+            <Link href="/contact">
               <Button size="lg" className="rounded-full">
                 Get Free Estimate
               </Button>

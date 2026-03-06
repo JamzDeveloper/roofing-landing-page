@@ -75,7 +75,7 @@ export default function RoofRepairPage() {
         description="From minor leaks to major storm damage, our expert team delivers lasting repairs that protect your home. We understand that roof damage needs immediate attention, which is why we offer rapid response times and comprehensive solutions that address both the symptoms and root causes."
         image="/professional-roofer-repairing-shingles-close-up-de.jpg"
         ctaText="Get Free Repair Quote"
-        ctaLink="/#contact"
+        ctaLink="/contact"
         secondaryCtaText="View Our Work"
         secondaryCtaLink="/#work"
       />

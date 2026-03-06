@@ -27,7 +27,7 @@ export function ServiceCTA({ emergency = false }: ServiceCTAProps) {
                   Call Emergency Line
                 </Button>
               </Link>
-              <Link href="/#contact">
+              <Link href="/contact">
                 <Button
                   size="lg"
                   variant="outline"
@@ -39,7 +39,7 @@ export function ServiceCTA({ emergency = false }: ServiceCTAProps) {
             </>
           ) : (
             <>
-              <Link href="/#contact">
+              <Link href="/contact">
                 <Button
                   size="lg"
                   className="rounded-full px-8 py-6 text-lg gap-2 bg-background text-foreground hover:bg-background/90"

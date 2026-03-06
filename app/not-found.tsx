@@ -30,7 +30,7 @@ export default function NotFound() {
                 Back to Home
               </Button>
             </Link>
-            <Link href="/#contact">
+            <Link href="/contact">
               <Button size="lg" variant="outline" className="rounded-full bg-transparent">
                 <Phone className="w-4 h-4 mr-2" />
                 Contact Us

@@ -80,10 +80,11 @@ export function Header() {
           <nav className="hidden md:flex items-center gap-8">
             {[
               { label: "Services", href: "/#services" },
-              { label: "Work", href: "/#work" },
+              { label: "Portfolio", href: "/portfolio" },
+              { label: "Testimonials", href: "/testimonials" },
               { label: "About", href: "/about" },
               { label: "Areas", href: "/areas-we-serve" },
-              { label: "Contact", href: "/#contact" },
+              { label: "Contact", href: "/contact" },
             ].map((item) => (
               <Link
                 key={item.label}
@@ -104,7 +105,7 @@ export function Header() {
 
           <div className="hidden md:flex items-center gap-3">
             {/* <BBBBadge size="small" className="bg-white rounded-lg px-2 py-1 shadow-lg" /> */}
-            <Link href="/#contact">
+            <Link href="/contact">
               <Button 
                 size="sm" 
                 className={`h-8 px-4 text-xs rounded-full transition-all ${
@@ -190,11 +191,12 @@ export function Header() {
                   <div className="space-y-1">
                     {[
                       { label: "Services", href: "/#services" },
-                      { label: "Work", href: "/#work" },
+                      { label: "Portfolio", href: "/portfolio" },
+                      { label: "Testimonials", href: "/testimonials" },
                       { label: "About", href: "/about" },
                       { label: "Service Areas", href: "/areas-we-serve" },
                       { label: "FAQ", href: "/faq" },
-                      { label: "Contact", href: "/#contact" },
+                      { label: "Contact", href: "/contact" },
                     ].map((item) => (
                       <Link
                         key={item.label}
@@ -209,7 +211,7 @@ export function Header() {
                   
                   {/* CTA Button moved up */}
                   <div className="mt-8 px-4 space-y-4">
-                    <Link href="/#contact" onClick={closeMenu}>
+                    <Link href="/contact" onClick={closeMenu}>
                       <Button size="lg" className="w-full rounded-xl h-12 text-base font-medium">
                         Book Inspection Now
                       </Button>

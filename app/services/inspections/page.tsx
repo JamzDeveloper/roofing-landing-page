@@ -74,7 +74,7 @@ export default function InspectionsPage() {
         description="Comprehensive roof assessments with detailed reports. AI-powered analysis for accurate, instant estimates. Whether you're buying a home, filing an insurance claim, or maintaining your property, our advanced inspection technology provides the insights you need to make informed decisions."
         image="/images/roofing-service2.png"
         ctaText="Schedule Inspection"
-        ctaLink="/#contact"
+        ctaLink="/contact"
         secondaryCtaText="View Our Work"
         secondaryCtaLink="/#work"
       />

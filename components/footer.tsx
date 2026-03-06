@@ -50,7 +50,7 @@ export function Footer() {
                 { label: "About Us", href: "/about" },
                 { label: "Service Areas", href: "/areas-we-serve" },
                 { label: "FAQ", href: "/faq" },
-                { label: "Contact", href: "/#contact" },
+                { label: "Contact", href: "/contact" },
               ].map((item) => (
                 <Link
                   key={item.label}

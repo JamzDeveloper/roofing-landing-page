@@ -74,7 +74,7 @@ export default function NewInstallationPage() {
         description="Premium materials meet expert craftsmanship. Every roof we install is backed by our comprehensive warranty. Whether you're building new or replacing an old roof, we deliver installations that enhance your home's value, curb appeal, and protection for decades to come."
         image="/brand-new-beautiful-asphalt-shingle-roof-installat.jpg"
         ctaText="Get Installation Quote"
-        ctaLink="/#contact"
+        ctaLink="/contact"
         secondaryCtaText="View Our Work"
         secondaryCtaLink="/#work"
       />

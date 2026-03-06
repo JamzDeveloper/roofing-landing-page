@@ -77,7 +77,7 @@ export default function StormDamagePage() {
         ctaLink="tel:+18159049777"
         ctaVariant="destructive"
         secondaryCtaText="File Insurance Claim"
-        secondaryCtaLink="/#contact"
+        secondaryCtaLink="/contact"
       />
       <ServiceIncludes title="Emergency Services" items={includes} />
       <ServiceProjects title="Storm Recovery Projects" projects={projects} />

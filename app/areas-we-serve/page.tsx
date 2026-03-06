@@ -161,7 +161,7 @@ export default function AreasWeServePage() {
           <div className="mt-8 text-center">
             <p className="text-muted-foreground text-sm">
               Don't see your area listed?{" "}
-              <Link href="/#contact" className="text-primary hover:underline">
+              <Link href="/contact" className="text-primary hover:underline">
                 Contact us
               </Link>{" "}
               to check if we serve your location.
@@ -203,7 +203,7 @@ export default function AreasWeServePage() {
                 estimate.
               </p>
               <div className="space-y-3">
-                <Link href="/#contact">
+                <Link href="/contact">
                   <Button size="lg" className="w-full rounded-full">
                     Request Free Estimate
                   </Button>
