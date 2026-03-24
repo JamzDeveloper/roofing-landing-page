@@ -53,7 +53,7 @@ export default function ContactPage() {
               <Mail className="w-8 h-8 text-primary mx-auto mb-3" />
               <h3 className="font-semibold mb-2">Email Us</h3>
               <p className="text-sm text-muted-foreground">
-                info@zproofing.com
+                info@zprroofing.com
               </p>
             </div>
             <div className="p-6 rounded-2xl bg-secondary/50 backdrop-blur text-center">

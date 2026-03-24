@@ -250,7 +250,7 @@ export default function TermsPage() {
           <p>For questions about these Terms of Service, contact us:</p>
           <ul>
             <li>
-              <strong>Email:</strong> info@zproofing.com
+              <strong>Email:</strong> info@zprroofing.com
             </li>
             <li>
               <strong>Phone:</strong> (815) 904-9777

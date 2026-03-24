@@ -74,10 +74,10 @@ export function Footer() {
                 (815) 904-9777
               </a>
               <a
-                href="mailto:info@zproofing.com"
+                href="mailto:info@zprroofing.com"
                 className="hover:text-foreground transition-colors block"
               >
-                info@zproofing.com
+                info@zprroofing.com
               </a>
               <div className="pt-4">
                 <BBBBadge size="large" />

@@ -13,7 +13,7 @@ const _playfair = Playfair_Display({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://zproofing.com"),
+  metadataBase: new URL("https://zprroofing.com"),
   title: {
     default: "ZPR Roofing | Professional Roofing Services in Rockford, IL",
     template: "%s | ZPR Roofing",
@@ -33,7 +33,7 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     locale: "en_US",
-    url: "https://zproofing.com",
+    url: "https://zprroofing.com",
     title: "ZPR Roofing | Professional Roofing Services in Rockford, IL",
     description:
       "Professional roofing contractor offering dependable roofing solutions for homeowners. Locally owned and operated. Se habla español.",
