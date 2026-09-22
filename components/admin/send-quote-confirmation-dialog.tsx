@@ -37,7 +37,7 @@ export function SendQuoteConfirmationDialog({
   )
 
   const handleSend = () => {
-    console.log("[v0] Sending quote to client:", {
+    console.log("Sending quote to client:", {
       quoteId,
       email,
       message,

@@ -85,13 +85,13 @@ export function CreateQuoteDialog({ open, onOpenChange }: CreateQuoteDialogProps
   const total = subtotal + iva
 
   const handleSaveDraft = () => {
-    console.log("[v0] Saving quote as draft:", items)
+    console.log("Saving quote as draft:", items)
     // In real app: API call to create quote with status "Draft"
     onOpenChange(false)
   }
 
   const handleCreateAndSend = () => {
-    console.log("[v0] Creating and sending quote:", items)
+    console.log("Creating and sending quote:", items)
     // In real app: API call to create quote with status "Enviada" and send email to client
     onOpenChange(false)
   }

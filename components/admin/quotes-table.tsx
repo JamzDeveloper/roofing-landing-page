@@ -142,12 +142,12 @@ export function QuotesTable() {
   }
 
   const handleApproveQuote = (quoteId: string) => {
-    console.log("[v0] Approving quote:", quoteId)
+    console.log("Approving quote:", quoteId)
     // In real app: API call to update status to "Aprobada"
   }
 
   const handleRejectQuote = (quoteId: string) => {
-    console.log("[v0] Rejecting quote:", quoteId)
+    console.log("Rejecting quote:", quoteId)
     // In real app: API call to update status to "Rechazada"
   }
 

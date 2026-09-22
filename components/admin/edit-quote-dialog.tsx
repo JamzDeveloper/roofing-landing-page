@@ -50,7 +50,7 @@ export function EditQuoteDialog({ open, onOpenChange, quoteId }: EditQuoteDialog
   // Load quote data when dialog opens
   useEffect(() => {
     if (open && quoteId) {
-      console.log("[v0] Loading quote data for editing:", quoteId)
+      console.log("Loading quote data for editing:", quoteId)
       // In real app: API call to fetch quote details
     }
   }, [open, quoteId])
@@ -94,7 +94,7 @@ export function EditQuoteDialog({ open, onOpenChange, quoteId }: EditQuoteDialog
   const total = subtotal + iva
 
   const handleSave = () => {
-    console.log("[v0] Updating quote:", quoteId, items)
+    console.log("Updating quote:", quoteId, items)
     // In real app: API call to update quote
     onOpenChange(false)
   }

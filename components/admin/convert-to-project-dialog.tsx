@@ -61,11 +61,11 @@ export function ConvertToProjectDialog({ open, onOpenChange, quoteId }: ConvertT
     const insufficientMaterials = materialsNeeded.filter((m) => m.disponible < m.cantidad)
 
     if (insufficientMaterials.length > 0) {
-      console.log("[v0] Warning: Insufficient materials detected:", insufficientMaterials)
+      console.log("Warning: Insufficient materials detected:", insufficientMaterials)
       // In real app: Show confirmation dialog about ordering materials
     }
 
-    console.log("[v0] Converting quote to project:", {
+    console.log("Converting quote to project:", {
       quoteId,
       workers: selectedWorkers,
       startDate: document.getElementById("fecha-inicio")?.value,
